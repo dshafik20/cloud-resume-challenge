@@ -10970,3 +10970,33 @@ section.resume-section .resume-section-content {
   }
 }
 
+
+/* Logo Display Styles */
+.logo-container {
+  display: flex;
+  justify-content: flex-start; /* Align logos to the left */
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling if logos exceed container width */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.logo-item {
+  display: flex; /* Ensure each logo item is displayed as flex */
+  align-items: center;
+  margin-right: 20px; /* Adjust spacing between logos */
+}
+
+.logo-item:last-child {
+  margin-right: 0; /* Remove margin from the last logo item */
+}
+
+.logo-item img {
+  max-width: 150px;
+  height: auto;
+  margin-right: 10px; /* Adjust space between image and text */
+}
+
+.logo-item p {
+  margin: 0; /* Remove default margin for paragraph */
+}
