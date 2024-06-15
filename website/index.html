@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Daniel</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+         
+</head>
+<body>
+    <div class="container-fluid ps-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    <span id="typewriter"></span>
+                </h1>
+                <div class="subheading mb-5">
+                    <a href="mailto:dshafik20@gmail.com">dshafik20@gmail.com</a>
+                </div>
+                <p class="lead mb-5">
+                    I currently work in help desk and in my free time I love learning more about cloud infrastructure,
+                    and finding the next thing I can automate to make my life easier.
+                    I setup Pi-hole on an old computer I had to block ads network-wide and have setup a NextCloud server for my very own personal cloud.
+                    I am constantly looking for new things I can learn, and this is one of them!
+                </p>
+                <p>You are visitor number: <span id="visitors"></span></p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/danshafik"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/dshafik20"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const phrases = ["Daniel Shafik", "a Tech Enthusiast"];
+            const typewriter = document.getElementById('typewriter');
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let forward = true;
+    
+            function type() {
+                const phrase = phrases[phraseIndex];
+                if (forward) {
+                    typewriter.innerHTML = "<span style='color: #167081;'>Hi There! I'm </span>" + phrase.substring(0, charIndex);
+                    charIndex++;
+                    if (charIndex > phrase.length) {
+                        forward = false;
+                        setTimeout(type, 1000); // Pause before reversing
+                        return;
+                    }
+                } else {
+                    typewriter.innerHTML = "<span style='color: #167081;'>Hi There! I'm </span>" + phrase.substring(0, charIndex);
+                    charIndex--;
+                    if (charIndex < 0) {
+                        forward = true;
+                        phraseIndex = (phraseIndex + 1) % phrases.length; // Loop through phrases
+                        setTimeout(type, 500); // Pause before typing next phrase
+                        return;
+                    }
+                }
+                setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+            }
+            type();
+        });
+    </script>
+</body>
+
+      </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">IT Analyst</h3>
+                            <div class="subheading mb-3">Lead Cyber Solutions</div>
+                            <li>Provided technical support for a team of over 300 end-users with off-boarding/on-boarding, software issues, and hardware repair/installation</li>
+                            <li>Maintained network of over 10 servers and configure ports, VPNs, switches, access points, and firewalls as needed</li>
+                            <li>Coordinate with management to manage inventory, supply orders, and setup of new equipment</li>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2024 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Technical Support Specialist</h3>
+                            <div class="subheading mb-3">WorldWide Tech Services</div>
+                            <li>Expertise in repairing, upgrading, reimaging, and troubleshooting hardware and software in HP, Lenovo, and Dell laptops, desktops, printers, Chromebooks, and TVs</li>
+                            <li>Provide door-to-door repair services for enhanced customer convenience</li>
+                            <li>Identify, prioritize, and resolve tickets within SLA periods</li>                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">December 2023 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Help Desk Volunteer</h3>
+                            <div class="subheading mb-3">Archangel Michael Church</div>
+                            <li>Provide Tier 1 desktop support and resolve break/fix issues to a team of 15</li>
+                            <li>Answer calls and escalate tickets as necessary</li>
+                            <li>Perform computer hardware upgrades and reimaging to laptops, printers, and desktops as required</li>   </div>                     
+                        <div class="flex-shrink-0"><span class="text-primary">June 2022 - Sept. 2022</span></div>
+
+                    </section>
+                    <hr class="m-0" />
+                    <!-- Education-->
+                    <section class="resume-section" id="education">
+                        <img src="assets/img/rutgers.jpg" alt="Rutgers" class="mr-3" style="max-width: 100px;">
+
+                        <div class="resume-section-content">
+                            <h2 class="mb-5">Education</h2>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Rutgers University</h3>
+                                    <div class="subheading mb-3">Bachelor of Arts</div>
+                                    <div>Information Technology and Informatics, minor in Digital Communication and Information</div>
+                                    <p>GPA: 3.74</p>
+                                    
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2020 - January 2025</span></div>
+                    </section>
+
+
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Technical Skills</h2>
+                    <div class="subheading mb-3">Technical Skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Computer and laptop hardware repair
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Windows 10 and 11 troubleshooting
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Windows Server 2022
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            PowerShell
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Active Directory
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Windows Server 2022
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-check"></i></span>
+                                Hyper-V
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Linux
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Python
+                                </li>
+                                <li>
+                                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                                    Exchange and Office 365
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">Soft Skills</div>
+                    Outstanding customer service, excellent leadership abilities, and excellent verbal, interpersonal, and written communication skills</p>
+                    </ul>
+                        
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects and Professional Development</h2>
+                    <h3 class="mb-0">Pi-Hole</h3>
+                    <br>
+                    <li>Host Pi-Hole server on a Debian Hyper-V VM for network-wide ad blocking across all devices</li>
+                    <li>Setup Tailscale as a subnet router and VPN to be able to block ads on any network while connected through VPN</li>
+                        <br>
+                        <style>
+                            * {
+                              box-sizing: border-box;
+                            }
+                            .column {
+                              float: left;
+                              width: 33.33%;
+                              padding: 5px;
+                            }
+                            /* Clearfix (clear floats) */
+                            .row::after {
+                              content: "";
+                              clear: both;
+                              display: table;
+                            }
+                            </style>
+                            </head>
+                            
+                            <div class="row">
+                              <div class="column">
+                                <img src="assets/img/before.jpg" alt="before" style="width:100%">
+                              </div>
+                              <div class="column">
+                                <img src="assets/img/after.jpg" alt="after" style="width:100%">
+                              </div>
+                            </div>
+                            <br>
+                            <h3 class="mb-0">Cloud Resume Challenge</h3>
+                            <a href="https://danshafikresume.cloud">Cloud Resume Challenge</a>
+                            <li>Sucessfully created a static website showcasing my resume hosted with AWS using for S3 for storage, CloudFront for content delivery, and Route53 for DNS</li>
+                            <li>Implemented a visitor counter feature using a Lambda function with Python for the backend, API Gateway as the Lambda trigger, and DynamoDB for a serverless database solution</li>
+
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            CompTIA A+ (2024)                   
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            TestOut Security Pro (2023)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Dell Service Provider (2024)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Lenovo Qualified PC Service Technician (2024)
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
