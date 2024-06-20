@@ -11000,3 +11000,8 @@ section.resume-section .resume-section-content {
 .logo-item p {
   margin: 0; /* Remove default margin for paragraph */
 }
+
+.button-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+}
