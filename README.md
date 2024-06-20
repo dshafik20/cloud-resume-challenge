@@ -1,1 +1,3 @@
-fill out later
+-	Created a static website showcasing my resume hosted with AWS using S3 for storage, CloudFront for content delivery, and Route53 for DNS
+-	Implemented a visitor counter feature using a Lambda function with Python for the backend, created an API Gateway as the Lambda trigger, and DynamoDB to store and update the visitor count table
+-	Implemented a front-end CI/CD pipeline using a Github Workflow action to push new changes made in VSCode on my local Github repository to my S3 bucket
