@@ -10936,7 +10936,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #167081;
 }
 
 .dev-icons {
@@ -11004,4 +11004,19 @@ section.resume-section .resume-section-content {
 .button-container {
   display: flex; /* Use flexbox to align items horizontally */
   align-items: center; /* Center items vertically */
+}
+
+.btn-custom {
+  background-color: #343a40;
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Adjusted padding for a smaller button */
+  font-size: 18px; /* Adjusted font size for a smaller button */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #125a64;
 }
