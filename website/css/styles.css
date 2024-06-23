@@ -11021,10 +11021,18 @@ section.resume-section .resume-section-content {
   background-color: #125a64;
 }
 
-#typewriter {
-  display: inline-block; /* Ensures it stays in line with surrounding content */
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Hides overflow text */
-  width: 100%; /* Ensures it takes full width */
-  height: 1.2em; /* Fixed height to prevent layout shifts */
+#typewriter-container {
+  height: 2.5em; /* Adjust based on your font size */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #typewriter-container {
+      height: auto; /* Allow height to adjust for wrapped text */
+  }
+  #typewriter {
+      white-space: normal; /* Allow text to wrap */
+  }
 }

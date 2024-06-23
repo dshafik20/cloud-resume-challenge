@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Daniel Shafik</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Daniel</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
-                    </a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-         
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Daniel Shafik</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        #typewriter {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            vertical-align: top;
+            height: 2.5em; /* Adjust height based on your font size and content */
+        }
+
+        @media (max-width: 768px) {
+            #typewriter {
+                white-space: normal; /* Allow text to wrap on smaller screens */
+            }
+        }
+    </style>
 </head>
-<body>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Daniel</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid ps-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    <span id="typewriter"></span>
+                </h1>
+                <div class="subheading mb-5">
+                    <a href="mailto:dshafik20@gmail.com">dshafik20@gmail.com</a>
+                    <a href="Resume_Website.pdf" download="Daniel Shafik Resume.pdf" class="btn-custom ms-3">Download Resume</a>
+                </div>
+                <p class="lead mb-5">
+                I am an IT student deeply passionate about technology and problem-solving. Currently, I am gaining valuable experience in help desk and computer technician roles, where I continuously seek to expand my skillset and explore innovative technologies. I am enthusiastic about learning and adapting to new challenges, and contributing to the ever-evolving IT world. This website is my attempt at the Cloud Resume Challenge, aimed to enhance my skills in AWS and showcase my dedication to professional growth.  Enjoy!
+                </p>
+                <p>You are visitor number: <span id="visitors"></span></p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/danshafik"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/dshafik20"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const phrases = ["Daniel Shafik", "A Tech Enthusiast"];
+            const typewriter = document.getElementById('typewriter');
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let forward = true;
+
+            function type() {
+                const phrase = phrases[phraseIndex];
+                if (forward) {
+                    typewriter.innerHTML = "<span style='color: #167081;'>Hi There! I'm </span>" + phrase.substring(0, charIndex);
+                    charIndex++;
+                    if (charIndex > phrase.length) {
+                        forward = false;
+                        setTimeout(type, 1000); // Pause before reversing
+                        return;
+                    }
+                } else {
+                    typewriter.innerHTML = "<span style='color: #167081;'>Hi There! I'm </span>" + phrase.substring(0, charIndex);
+                    charIndex--;
+                    if (charIndex < 0) {
+                        forward = true;
+                        phraseIndex = (phraseIndex + 1) % phrases.length; // Loop through phrases
+                        setTimeout(type, 500); // Pause before typing next phrase
+                        return;
+                    }
+                }
+                setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+            }
+            type();
+        });
+    </script>
+</body>
+</html>
+
+
     <body>
         <div class="container-fluid ps-0">
             <!-- About-->
@@ -66,14 +135,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const phrases = ["Daniel Shafik", "a Tech Enthusiast"];
+            const phrases = ["Daniel Shafik", "A Tech Enthusiast"];
             const typewriter = document.getElementById('typewriter');
             let phraseIndex = 0;
             let charIndex = 0;
             let forward = true;
 
-            
-    
             function type() {
                 const phrase = phrases[phraseIndex];
                 if (forward) {
