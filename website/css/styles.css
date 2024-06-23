@@ -11020,19 +11020,3 @@ section.resume-section .resume-section-content {
 .btn-custom:hover {
   background-color: #125a64;
 }
-
-#typewriter-container {
-  height: 2.5em; /* Adjust based on your font size */
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  #typewriter-container {
-      height: auto; /* Allow height to adjust for wrapped text */
-  }
-  #typewriter {
-      white-space: normal; /* Allow text to wrap */
-  }
-}
