@@ -11020,3 +11020,11 @@ section.resume-section .resume-section-content {
 .btn-custom:hover {
   background-color: #125a64;
 }
+
+#typewriter {
+  display: inline-block; /* Ensures it stays in line with surrounding content */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflow text */
+  width: 100%; /* Ensures it takes full width */
+  height: 1.2em; /* Fixed height to prevent layout shifts */
+}
