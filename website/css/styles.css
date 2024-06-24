@@ -8037,7 +8037,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: #167081 !important;}
+  color: #000 !important;}
 
 .text-secondary {
   --bs-text-opacity: 1;
@@ -11030,6 +11030,7 @@ section.resume-section .resume-section-content {
 #typewriter {
   display: inline;
   font-size: 62px; /* Adjust to match your h1 font size */
+  text-align: center;
   color: #000;
 }
 
@@ -11041,3 +11042,4 @@ section.resume-section .resume-section-content {
   margin-left: 9px; /* Add space before the cursor */
   
 }
+
