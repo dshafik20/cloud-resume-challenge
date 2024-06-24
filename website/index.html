@@ -65,39 +65,41 @@
             </section>
         </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const phrases = ["Daniel Shafik", "A Tech Enthusiast"];
-            const typewriter = document.getElementById('typewriter');
-            let phraseIndex = 0;
-            let charIndex = 0;
-            let forward = true;
-
-            function type() {
-                const phrase = phrases[phraseIndex];
-                if (forward) {
-                    typewriter.innerHTML = "<span style='color: #167081;'>Hi There! I'm </span>" + phrase.substring(0, charIndex);
-                    charIndex++;
-                    if (charIndex > phrase.length) {
-                        forward = false;
-                        setTimeout(type, 700); // Pause before reversing
-                        return;
+    </head>
+    <body>    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const phrases = ["Daniel Shafik", "A Tech Enthusiast"];
+                const typewriter = document.getElementById('typewriter');
+                let phraseIndex = 0;
+                let charIndex = 0;
+                let forward = true;
+    
+                function type() {
+                    const phrase = phrases[phraseIndex];
+                    if (forward) {
+                        typewriter.innerHTML = "<span style='color: #5680e9;'>Hi There! I'm </span>" + phrase.substring(0, charIndex) + "<span class='cursor'></span>";
+                        charIndex++;
+                        if (charIndex > phrase.length) {
+                            forward = false;
+                            setTimeout(type, 700); // Pause before reversing
+                            return;
+                        }
+                    } else {
+                        typewriter.innerHTML = "<span style='color: #5680e9;'>Hi There! I'm </span>" + phrase.substring(0, charIndex) + "<span class='cursor'></span>";
+                        charIndex--;
+                        if (charIndex < 0) {
+                            forward = true;
+                            phraseIndex = (phraseIndex + 1) % phrases.length; // Loop through phrases
+                            setTimeout(type, 700); // Pause before typing next phrase
+                            return;
+                        }
                     }
-                } else {
-                    typewriter.innerHTML = "<span style='color: #167081;'>Hi There! I'm </span>" + phrase.substring(0, charIndex);
-                    charIndex--;
-                    if (charIndex < 0) {
-                        forward = true;
-                        phraseIndex = (phraseIndex + 1) % phrases.length; // Loop through phrases
-                        setTimeout(type, 1); // Pause before typing next phrase
-                        return;
-                    }
+                    setTimeout(type, 90); // Adjust typing speed here (in milliseconds)
                 }
-                setTimeout(type, 90); // Adjust typing speed here (in milliseconds)
-            }
-            type();
-        });
-    </script>
+                type();
+            });
+        </script>
 
 </body>
 
@@ -153,6 +155,7 @@
                                     
                                 </div>
                                 <div class="flex-shrink-0"><span class="text-primary">September 2020 - January 2025</span></div>
+                                
                     </section>
                     <section class="resume-section" id="skills">
                         <div class="resume-section-content">
