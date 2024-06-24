@@ -11011,7 +11011,7 @@ section.resume-section .resume-section-content {
   background-color: #000;
   color: white;
   border: none;
-  padding: 4px 9px; /* Adjusted padding for a smaller button */
+  padding: 9px 11px; /* Adjusted padding for a smaller button */
   font-size: 12px; /* Adjusted font size for a smaller button */
   text-decoration: none;
   border-radius: 5px;
