@@ -11016,6 +11016,8 @@ section.resume-section .resume-section-content {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  white-space: nowrap; /* Ensures text does not wrap */
+
 }
 
 .btn-custom:hover {
@@ -11040,7 +11042,7 @@ section.resume-section .resume-section-content {
 
 .cursor {
   font-family: monospace;
-  font-size: 48px; /* Adjust to match your h1 font size */
+  font-size: 46px; /* Adjust to match your h1 font size */
   border-right: 4px solid #000; /* Create the caret effect */
   animation: blink-caret 0.4s infinite; /* Apply the caret animation with a shorter duration */
   margin-left: 9px; /* Add space before the cursor */
