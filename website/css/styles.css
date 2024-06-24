@@ -11030,6 +11030,7 @@ section.resume-section .resume-section-content {
 
 .typewriter-text {
   display: inline-block;
+  font-size: 10px; /* Adjust to match your h1 font size */
   color: #5680e9; /* Default color */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
@@ -11041,7 +11042,7 @@ section.resume-section .resume-section-content {
   font-family: monospace;
   font-size: 80px; /* Adjust to match your h1 font size */
   border-right: 4px solid #000; /* Create the caret effect */
-  animation: blink-caret 0.6s infinite; /* Apply the caret animation with a shorter duration */
+  animation: blink-caret 0.4s infinite; /* Apply the caret animation with a shorter duration */
   margin-left: 9px; /* Add space before the cursor */
 }
 

@@ -82,7 +82,7 @@
                         charIndex++;
                         if (charIndex > phrase.length) {
                             forward = false;
-                            setTimeout(type, 700); // Pause before reversing
+                            setTimeout(type, 600); // Pause before reversing
                             return;
                         }
                     } else {
@@ -91,7 +91,7 @@
                         if (charIndex < 0) {
                             forward = true;
                             phraseIndex = (phraseIndex + 1) % phrases.length; // Loop through phrases
-                            setTimeout(type, 700); // Pause before typing next phrase
+                            setTimeout(type, 1); // Pause before typing next phrase
                             return;
                         }
                     }
