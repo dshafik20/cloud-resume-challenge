@@ -10951,11 +10951,10 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  
 }
 section.resume-section .resume-section-content {
   width: 100%;
-  white-space: nowrap; /* Ensures text does not wrap to the next line */
-
 }
 
 @media (min-width: 768px) {
