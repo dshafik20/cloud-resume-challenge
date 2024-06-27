@@ -74,7 +74,7 @@
         <div id="typewriter"></div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const phrases = ["I'm Daniel Shafik", "I'm A Tech Enthusiast"];
+                const phrases = ["Daniel Shafik", "A Tech Enthusiast"];
                 const typewriter = document.getElementById('typewriter');
                 let phraseIndex = 0;
                 let charIndex = 0;
@@ -84,6 +84,7 @@
                     const phrase = phrases[phraseIndex];
                     if (forward) {
                         typewriter.innerHTML = "<span style='color: black;'>Hi There! <br></span>" +
+                                               "<span style='color: #5680e9;'>I'm </span>" +
                                                "<span style='color: #5680e9;'>" + phrase.substring(0, charIndex) + "</span>" +
                                                "<span class='cursor'></span>";
                         charIndex++;
@@ -94,6 +95,7 @@
                         }
                     } else {
                         typewriter.innerHTML = "<span style='color: black;'>Hi There! <br></span>" +
+                                               "<span style='color: #5680e9;'>I'm </span>" +
                                                "<span style='color: #5680e9;'>" + phrase.substring(0, charIndex) + "</span>" +
                                                "<span class='cursor'></span>";
                         charIndex--;
