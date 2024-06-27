@@ -126,7 +126,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.7em;
+    font-size: 3.1em;
   }
 }
 
@@ -11042,9 +11042,10 @@ section.resume-section .resume-section-content {
 
 .cursor {
   font-family: monospace;
-  font-size: 40px; /* Adjust to match your h1 font size */
+  font-size: 46px; /* Adjust to match your h1 font size */
   border-right: 4px solid #000; /* Create the caret effect */
   animation: blink-caret 0.4s infinite; /* Apply the caret animation with a shorter duration */
   margin-left: 9px; /* Add space before the cursor */
+  white-space: nowrap; /* Ensures text does not wrap */
 }
 
