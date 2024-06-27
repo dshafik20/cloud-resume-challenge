@@ -11051,10 +11051,25 @@ section.resume-section .resume-section-content {
 
 .moving-eye {
   display: inline-block;
-  animation: moveEye 0.5s infinite alternate;
+  animation: moveEye 0.9s infinite alternate;
 }
 
 @keyframes moveEye {
   0% { transform: translateX(0); }
   100% { transform: translateX(10px); }
+}
+
+.certification-images {
+  display: flex;
+  justify-content: flex-start; /* Align images to the left */
+  align-items: flex-end; /* Align images to the bottom */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow images to wrap if they exceed width */
+}
+
+.certification-images img {
+  width: 200px; /* Set a fixed width for the images */
+  height: 200px; /* Automatically adjust height to maintain aspect ratio */
+  margin-right: 10px; /* Space between images */
+  margin-bottom: 10px; /* Space between rows */
 }

@@ -39,6 +39,7 @@
         <!-- Page Content-->
          
 </head>
+<body>
     
     <body>
         <div class="container-fluid ps-0">
@@ -56,11 +57,10 @@
                         <br>
                         <br>
                         I am an IT student deeply passionate about technology and problem-solving. Currently, I am gaining valuable experience in help desk and computer technician roles.
-                        I am constantly seeking ways to expand my skillset and explore innovative technologies. I am enthusiastic about learning and adapting to new challenges,
-                        and contributing to the ever-evolving IT world. This website is my attempt at the Cloud Resume Challenge, aimed to enhance my skills in AWS.
+                        Outside of work, I  constantly seek ways to expand my skillset and explore innovative technologies.  This website is my attempt at the Cloud Resume Challenge, aimed to enhance my skills in AWS.
                         <br>
                         Enjoy!
-                        <p>You are visitor number: <span id="visitors"></span> <span id="moving-eye"> 👀</span></p>
+                        <p>You are visitor number: <span id="visitors"></span> <span class="moving-eye">👀</span></p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/danshafik"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/dshafik20"><i class="fab fa-github"></i></a>
@@ -68,15 +68,6 @@
                 </div>
             </section>
         </div>
-    
-        <script>
-            // Adding the moving-eye class after the DOM content is loaded
-            document.addEventListener('DOMContentLoaded', function() {
-                const movingEye = document.getElementById('moving-eye');
-                movingEye.classList.add('moving-eye');
-            });
-        </script>
-    </body>
 
     </head>
         <div id="typewriter"></div>
@@ -131,8 +122,8 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Help Desk Analyst</h3>
                             <div class="subheading mb-3">Lead Cyber Solutions</div>
-                            <li>Provide technical support for a team of over 300 end-users and assist with on-boarding/off-boarding, software troubleshooting, and hardware repair/installation</li>
-                            <li>Maintain network of over 10 servers and configure ports, VPNs, switches, access points, and firewalls as needed</li>
+                            <li>Use Active Directory, Microsoft Exchange, and ConnectWise to provide technical support to a team of over 400 end-users </li>
+                            <li>Assist with on/offboarding, software troubleshooting, and configure ports, VPNs, switches, access points, and firewalls as needed</li>
                             <li>Maintain proper documentation and coordinate with management to manage inventory, supply orders, and setup of new equipment</li>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">April 2024 - Present</span></div>
@@ -236,46 +227,58 @@
                         </div>
                     </section>
     
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects and Professional Development</h2>
-                    <h3 class="mb-0">Home Lab</h3>
-                    <br>
+                    <hr class="m-0" />
+<!-- Projects-->
+<section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Projects and Professional Development</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Home Lab</h3>
+                <ul>
                     <li>Host Pi-Hole server on a Debian Hyper-V VM coupled with tailscale as a subnet router/VPN for network-wide and on the go ad blocking across all devices</li>
                     <li>Use Windows Server 2022 to manage a domain of 5 virtual machines running Windows 10</li>
                     <li>Write scripts to automate regular activities and maintenance</li>
-
-                    <br>
-                     <h3 class="mb-0">Cloud Resume Challenge</h3>
-                     <br>
-                     <a href="https://danielshafik.com">Cloud Resume Challenge</a>
-                     <li>Sucessfully created a static website showcasing my resume hosted with AWS using S3 for storage, CloudFront for content delivery, and Route53 for DNS</li>
-                     <li>Implemented a visitor counter feature using a Lambda function with Python for the backend, created an API Gateway as the Lambda trigger, and DynamoDB to store and update the visitor count table</li>
-                     <li>Implemented a front-end CI/CD pipeline using a Github Workflow action to push new changes made in VSCode on my local Git repository to my Github remote repository, then to my S3 bucket </li>
-                     <br>
-                     <h3 class="mb-0">New York Times Headline Analyzer</h3>
-                     <br>
-                     <li>Created a Python project using the New York Times API to analyze news headlines and other analytics spanning different years</li>
-                     <li>Used vaderSentiment to perform sentiment analysis of data collected</li>
-
-                            <style>                
-                                .certification-images {
-                                    display: flex;
-                                    justify-content: flex-start; /* Align images to the left */
-                                    align-items: flex-end; /* Align images to the bottom */
-                                    margin-top: 20px;
-                                    flex-wrap: wrap; /* Allow images to wrap if they exceed width */
-                                }
+                </ul>
                 
-                                .certification-images img {
-                                    width: 200px; /* Set a fixed width for the images */
-                                    height: 200px; /* Automatically adjust height to maintain aspect ratio */
-                                    margin-right: 10px; /* Space between images */
-                                    margin-bottom: 10px; /* Space between rows */
-                                }
-                            </style>
+            </div>
+            
+            <div class="flex-shrink-0 text-right" style="margin-bottom: 30px;"
+                <span class="text-primary">December 2023 - Present</span>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">Cloud Resume Challenge</h3>
+                <ul>
+                    <li><a href="https://danielshafik.com">Cloud Resume Challenge</a></li>
+                    <li>Successfully created a static website showcasing my resume hosted with AWS using S3 for storage, CloudFront for content delivery, and Route53 for DNS</li>
+                    <li>Implemented a visitor counter feature using a Lambda function with Python for the backend, created an API Gateway as the Lambda trigger, and DynamoDB to store and update the visitor count table</li>
+                    <li>Implemented a front-end CI/CD pipeline using a Github Workflow action to push new changes made in VSCode on my local Git repository to my Github remote repository, then to my S3 bucket </li>
+                </ul>
+            </div>
+            <div class="flex-shrink-0 text-right" style="margin-bottom: 10px;">
+                <span class="text-primary">June 2024</span>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">New York Times Headline Analyzer</h3>
+                <ul>
+                    <li>Created a Python project using the New York Times API to analyze news headlines and other analytics spanning different years</li>
+                    <li>Used vaderSentiment to perform sentiment analysis of data collected</li>
+                </ul>
+            </div>
+            <div class="flex-shrink-0 text-right" style="margin-bottom: 10px;">
+                <span class="text-primary">March 2023</span>
+            </div>
+        </div>
+        
+    </div>
+</section>
+                            
                             </section>
                             <hr class="m-0" />
                             <!-- Awards-->
