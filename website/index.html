@@ -56,7 +56,11 @@
                         <a href="Resume_Website.pdf" download="Daniel Shafik Resume.pdf" class="btn-custom ms-3">Download Resume</a>
                         <br>
                         <br>
-                    I am an IT student deeply passionate about technology and problem-solving. Currently, I am gaining valuable experience in help desk and computer technician roles, where I continuously seek to expand my skillset and explore innovative technologies. I am enthusiastic about learning and adapting to new challenges, and contributing to the ever-evolving IT world. This website is my attempt at the Cloud Resume Challenge, aimed to enhance my skills in AWS and showcase my dedication to professional growth.  Enjoy!
+                    I am an IT student deeply passionate about technology and problem-solving. Currently, I am gaining valuable experience in help desk and computer technician roles.
+                    I am constnatly seeking ways to expand my skillset and explore innovative technologies. I am enthusiastic about learning and adapting to new challenges,
+                    and contributing to the ever-evolving IT world. This website is my attempt at the Cloud Resume Challenge, aimed to enhance my skills in AWS.
+                    <br>
+                    Enjoy!
                     <p>You are visitor number: <span id="visitors"></span></p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/danshafik"><i class="fab fa-linkedin-in"></i></a>
@@ -70,16 +74,18 @@
         <div id="typewriter"></div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const phrases = ["Daniel Shafik", "A Tech Enthusiast"];
+                const phrases = ["I'm Daniel Shafik", "I'm A Tech Enthusiast"];
                 const typewriter = document.getElementById('typewriter');
                 let phraseIndex = 0;
                 let charIndex = 0;
                 let forward = true;
-    
+            
                 function type() {
                     const phrase = phrases[phraseIndex];
                     if (forward) {
-                        typewriter.innerHTML = "<span style='color: #5680e9;'>Hi There! I'm <br></span>" + phrase.substring(0, charIndex) + "<span class='cursor'></span>";
+                        typewriter.innerHTML = "<span style='color: black;'>Hi There! <br></span>" +
+                                               "<span style='color: #5680e9;'>" + phrase.substring(0, charIndex) + "</span>" +
+                                               "<span class='cursor'></span>";
                         charIndex++;
                         if (charIndex > phrase.length) {
                             forward = false;
@@ -87,7 +93,9 @@
                             return;
                         }
                     } else {
-                        typewriter.innerHTML = "<span style='color: #5680e9;'>Hi There! I'm <br></span>" + phrase.substring(0, charIndex) + "<span class='cursor'></span>";
+                        typewriter.innerHTML = "<span style='color: black;'>Hi There! <br></span>" +
+                                               "<span style='color: #5680e9;'>" + phrase.substring(0, charIndex) + "</span>" +
+                                               "<span class='cursor'></span>";
                         charIndex--;
                         if (charIndex < 0) {
                             forward = true;
@@ -96,12 +104,11 @@
                             return;
                         }
                     }
-                    setTimeout(type, 90); // Adjust typing speed here (in milliseconds)
+                    setTimeout(type, 45); // Adjust typing speed here (in milliseconds)
                 }
                 type();
             });
-        </script>
-
+            </script>
 </body>
 
         </section>
