@@ -11049,3 +11049,12 @@ section.resume-section .resume-section-content {
   white-space: nowrap; /* Ensures text does not wrap */
 }
 
+.moving-eye {
+  display: inline-block;
+  animation: moveEye 0.5s infinite alternate;
+}
+
+@keyframes moveEye {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10px); }
+}
