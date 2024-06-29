@@ -11012,7 +11012,7 @@ section.resume-section .resume-section-content {
   color: white;
   border: none;
   padding: 9px 11px; /* Adjusted padding for a smaller button */
-  font-size: 12px; /* Adjusted font size for a smaller button */
+  font-size: 9px; /* Adjusted font size for a smaller button */
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -11051,7 +11051,7 @@ section.resume-section .resume-section-content {
 
 .moving-eye {
   display: inline-block;
-  animation: moveEye 0.9s infinite alternate;
+  animation: moveEye 1.5s infinite alternate;
 }
 
 @keyframes moveEye {
