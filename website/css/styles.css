@@ -11078,3 +11078,7 @@ section.resume-section .resume-section-content {
 .icon-color {
   color: #5680e9;
 }
+
+.half-line-break {
+  display: block;
+  height: 0.5em; /* Adjust this value to control the height of the break */
