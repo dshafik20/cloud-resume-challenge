@@ -11073,3 +11073,7 @@ section.resume-section .resume-section-content {
   margin-right: 10px; /* Space between images */
   margin-bottom: 10px; /* Space between rows */
 }
+
+.icon-color {
+  color: #5680e9;
+}
