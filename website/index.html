@@ -28,9 +28,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
                     </a></li>
                 </ul>
@@ -149,24 +149,51 @@
                         <div class="flex-shrink-0"><span class="text-primary">June 2022 - Sept. 2022</span></div>
                         
 
-        </section>
-                    <hr class="m-0" />
-                    <!-- Education-->
-                    <section class="resume-section" id="education">
-                        <img src="assets/img/rutgers.jpg" alt="Rutgers" class="mr-3" style="max-width: 100px;">
-
+                    </section>
+                    <section class="resume-section" id="interests">
                         <div class="resume-section-content">
-                            <h2 class="mb-5">Education</h2>
+                            <h2 class="mb-5">Projects and Professional Development</h2>
                             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                 <div class="flex-grow-1">
-                                    <h3 class="mb-0">Rutgers University</h3>
-                                    <div class="subheading mb-3">Bachelor of Arts</div>
-                                    <div>Information Technology and Informatics, minor in Digital Communication and Information</div>
-                                    <p>GPA: 3.74</p>
+                                    <h3 class="mb-0">Home Lab</h3>
+                                    <ul>
+                                        <li>Host Pi-Hole server on a Debian Hyper-V VM coupled with tailscale as a subnet router/VPN for network-wide and on the go ad blocking across all devices</li>
+                                        <li>Use Windows Server 2022 to manage a domain of 5 virtual machines running Windows 10</li>
+                                        <li>Write scripts to automate regular activities and maintenance</li>
+                                    </ul>
                                     
                                 </div>
-                                <div class="flex-shrink-0"><span class="text-primary">September 2020 - January 2025</span></div>
-                            </section>
+                                
+                                <div class="flex-shrink-0 text-right" style="margin-bottom: 30px;"
+                                    <span class="text-primary">December 2023 - Present</span>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Cloud Resume Challenge</h3>
+                                    <ul>
+                                        <li><a href="https://danielshafik.com">Cloud Resume Challenge</a></li>
+                                        <li>Successfully created a static website showcasing my resume hosted with AWS using S3 for storage, CloudFront for content delivery, and Route53 for DNS</li>
+                                        <li>Implemented a visitor counter feature using a Lambda function with Python for the backend, created an API Gateway as the Lambda trigger, and DynamoDB to store and update the visitor count table</li>
+                                        <li>Implemented a front-end CI/CD pipeline using a Github Workflow action to push new changes made in VSCode on my local Git repository to my Github remote repository, then to my S3 bucket </li>
+                                    </ul>
+                                </div>
+                                <div class="flex-shrink-0 text-right" style="margin-bottom: 10px;">
+                                    <span class="text-primary">June 2024</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">New York Times Headline Analyzer</h3>
+                                    <ul>
+                                        <li>Created a Python project using the New York Times API to analyze news headlines and other analytics spanning different years</li>
+                                        <li>Used vaderSentiment to perform sentiment analysis of data collected</li>
+                                    </ul>
+                                </div>
+                                <div class="flex-shrink-0 text-right" style="margin-bottom: 10px;">
+                                    <span class="text-primary">March 2023</span>
+                                </div>
                                 
                     </section>
                     <section class="resume-section" id="skills">
@@ -230,54 +257,25 @@
                         </div>
                     </section>
     
-                    <hr class="m-0" />
 <!-- Projects-->
- </section>
-<section class="resume-section" id="interests">
+</section>
+<hr class="m-0" />
+<!-- Education-->
+<section class="resume-section" id="education">
+    <img src="assets/img/rutgers.jpg" alt="Rutgers" class="mr-3" style="max-width: 100px;">
+
     <div class="resume-section-content">
-        <h2 class="mb-5">Projects and Professional Development</h2>
+        <h2 class="mb-5">Education</h2>
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
-                <h3 class="mb-0">Home Lab</h3>
-                <ul>
-                    <li>Host Pi-Hole server on a Debian Hyper-V VM coupled with tailscale as a subnet router/VPN for network-wide and on the go ad blocking across all devices</li>
-                    <li>Use Windows Server 2022 to manage a domain of 5 virtual machines running Windows 10</li>
-                    <li>Write scripts to automate regular activities and maintenance</li>
-                </ul>
+                <h3 class="mb-0">Rutgers University</h3>
+                <div class="subheading mb-3">Bachelor of Arts</div>
+                <div>Information Technology and Informatics, minor in Digital Communication and Information</div>
+                <p>GPA: 3.74</p>
                 
             </div>
-            
-            <div class="flex-shrink-0 text-right" style="margin-bottom: 30px;"
-                <span class="text-primary">December 2023 - Present</span>
-            </div>
-        </div>
-        
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Cloud Resume Challenge</h3>
-                <ul>
-                    <li><a href="https://danielshafik.com">Cloud Resume Challenge</a></li>
-                    <li>Successfully created a static website showcasing my resume hosted with AWS using S3 for storage, CloudFront for content delivery, and Route53 for DNS</li>
-                    <li>Implemented a visitor counter feature using a Lambda function with Python for the backend, created an API Gateway as the Lambda trigger, and DynamoDB to store and update the visitor count table</li>
-                    <li>Implemented a front-end CI/CD pipeline using a Github Workflow action to push new changes made in VSCode on my local Git repository to my Github remote repository, then to my S3 bucket </li>
-                </ul>
-            </div>
-            <div class="flex-shrink-0 text-right" style="margin-bottom: 10px;">
-                <span class="text-primary">June 2024</span>
-            </div>
-        </div>
-        
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">New York Times Headline Analyzer</h3>
-                <ul>
-                    <li>Created a Python project using the New York Times API to analyze news headlines and other analytics spanning different years</li>
-                    <li>Used vaderSentiment to perform sentiment analysis of data collected</li>
-                </ul>
-            </div>
-            <div class="flex-shrink-0 text-right" style="margin-bottom: 10px;">
-                <span class="text-primary">March 2023</span>
-            </div>
+            <div class="flex-shrink-0"><span class="text-primary">September 2020 - January 2025</span></div>
+        </section>
         </div>
         
     </div>
